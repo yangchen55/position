@@ -1,0 +1,36 @@
+body {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0;
+}
+/* position: static, relative. ansolite. fixed , sticky, initial */
+.parent {
+  background: blue;
+  padding: 1rem;
+
+  /* relative shows that it is parent now */
+  position: relative;
+}
+.parent > div {
+  height: 150px;
+}
+.child1 {
+  background: red;
+}
+/* if position is given absolute then it goes for parent(position relative), if not then it stick to root */
+/* position relative is itself is parent thats y its changing according to its position */
+.child2 {
+  background: yellow;
+  position: sticky;
+  left: 30px;
+  /* to close all gap above */
+  top: 0;
+}
+.sticky-nav {
+  /* background-color: orange;
+  position: sticky;
+  top: 20px; */
+}
+.child3 {
+  background: pink;
+}
